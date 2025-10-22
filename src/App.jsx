@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <Stack direction="column" spacing={5} sx={{justifyContent: "center",alignItems: 'center',}}>
+    <Stack direction={{xs : "column" , sm : "column" ,md : "row" ,lg : "row", xl : "row"}} spacing={{xs : 1, sm : 1,md : 3,lg : 3, xl : 5}} sx={{justifyContent: "center",alignItems: 'center',}}>
       <Typography variant='h1'>soy un pato y vivo feliz</Typography>
       <Avatar sx={{width: 400, height: 400}} className="avatar" src="/src/theDUCK.jpg" alt="Pato feliz" />
       <Button sx={{color:'white',backgroundColor:'green'}}variant='contained' size='large' color='primary' type="button" onClick={count}>
